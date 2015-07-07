@@ -16,6 +16,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <uc1:HeaderInclude runat="server" ID="HeaderInclude" />
+    <uc1:FooterInclude runat="server" ID="FooterInclude" />
     <asp:ContentPlaceHolder ID="head" runat="server">
         <title>Practice 20150706 v1.0-</title>
     </asp:ContentPlaceHolder>
@@ -37,6 +38,6 @@
         </div>
     </form>
 </body>
-<uc1:FooterInclude runat="server" ID="FooterInclude" />
+
 </html>
 

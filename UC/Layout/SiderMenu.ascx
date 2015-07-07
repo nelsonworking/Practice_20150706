@@ -15,13 +15,15 @@
                 <!-- /input-group -->
             </li>
             <li>
-                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
+                <a href="/Pages"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-files-o fa-fw"></i>CSS Practice<span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-files-o fa-fw">&nbsp;</i>Practice<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li><a href="../../Pages/201507071435/Default.aspx">CSS 練習</a></li>
+                    <li><a href="../../Pages/201507071615/Default.aspx">Require.js 練習</a></li>
+                    <li><a href="../../Pages/201507071709/Default.aspx">Utilities</a></li>
                 </ul>
                 <!-- /.nav-second-level -->
             </li>

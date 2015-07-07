@@ -11,7 +11,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4>
-                <i class="fa fa-external-link"></i>Links
+                <i class="fa fa-external-link">&nbsp;</i>Links
             </h4>
         </div>
         <div class="panel-body">
@@ -34,7 +34,12 @@
                 <a class="list-group-item" href="201507071540.aspx" target="_blank">
                     <i class="fa fa-external-link-square">&nbsp;</i>氣泡提示框 #1<span class="pull-right">&nbsp;</span>
                 </a>
-
+                <a class="list-group-item" href="201507071552.aspx" target="_blank">
+                    <i class="fa fa-external-link-square">&nbsp;</i>氣泡提示框 #2<span class="pull-right">&nbsp;</span>
+                </a>
+                <a class="list-group-item" href="201507071553.aspx" target="_blank">
+                    <i class="fa fa-external-link-square">&nbsp;</i> 模擬「Digital Font」<span class="pull-right">&nbsp;</span>
+                </a>
             </div>
         </div>
         <%--<div class="panel-footer">footer</div>--%>
