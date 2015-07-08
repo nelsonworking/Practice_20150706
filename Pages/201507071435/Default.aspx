@@ -40,6 +40,9 @@
                 <a class="list-group-item" href="201507071553.aspx" target="_blank">
                     <i class="fa fa-external-link-square">&nbsp;</i> 模擬「Digital Font」<span class="pull-right">&nbsp;</span>
                 </a>
+                <a class="list-group-item" href="201507081749.aspx" target="_blank">
+                    <i class="fa fa-external-link-square">&nbsp;</i>「文字輸入框」加一底線(類似某些手機常用的文字輸入 )<span class="pull-right">2015/07/08</span>
+                </a>
             </div>
         </div>
         <%--<div class="panel-footer">footer</div>--%>

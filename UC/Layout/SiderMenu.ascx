@@ -21,9 +21,10 @@
             <li>
                 <a href="#"><i class="fa fa-files-o fa-fw">&nbsp;</i>Practice<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="../../Pages/201507071435/Default.aspx">CSS 練習</a></li>
-                    <li><a href="../../Pages/201507071615/Default.aspx">Require.js 練習</a></li>
-                    <li><a href="../../Pages/201507071709/Default.aspx">Utilities</a></li>
+                    <li><a href="<%= Page.ResolveUrl("/Pages/201507071435/Default.aspx")%>">CSS 練習</a></li>
+                    <li><a href="<%= Page.ResolveUrl("/Pages/201507071615/Default.aspx")%>">Require.js 練習</a></li>
+                    <li><a href="<%= Page.ResolveUrl("/Pages/201507071709/Default.aspx")%>">Utilities</a></li>
+                    <li><a href="<%= Page.ResolveUrl("/Pages/201507081451/Default.aspx")%>">Others</a></li>
                 </ul>
                 <!-- /.nav-second-level -->
             </li>

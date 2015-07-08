@@ -1,0 +1,320 @@
+@import "compass/css3";
+// @import "compass/reset";
+
+$prefix: "ml-";
+$size-sm: 768px;
+$size-md: 992px;
+$size-lg: 1220px;
+
+$gridMaxCount : 12;
+$colorMaxGrade : 16;
+
+$font-size-base: 2px;
+$font-size-count-max : 40;
+
+$color-bg-default: #e6e6e6;
+$color-bg-primary: #286090;
+$color-bg-success: #5cb85c;
+$color-bg-danger: #d9534f;
+
+$color-front-default: invert(lighten($color-bg-default, 50%));
+$color-front-primary: invert(darken($color-bg-primary, 50%));
+$color-front-success: invert(darken($color-bg-success, 50%));
+$color-front-danger: invert(darken($color-bg-danger, 50%));
+
+$color-b-default: darken($color-bg-default, 10%);
+$color-b-primary: darken($color-bg-primary, 10%);
+$color-b-success: darken($color-bg-success, 10%);
+$color-b-danger: darken($color-bg-danger, 10%);
+
+
+$color-black: black;
+$color-brown: brown;
+$color-red:	red;
+$color-orangered: orangered;
+$color-yellow: yellow;
+$color-green: green;
+$color-blue: blue;
+$color-purple: purple;
+$color-gray: gray;
+$color-white: white;
+
+
+.btn-cc {
+  color: $color-white;
+  background-color: $color-brown;
+  border-color: darken($color-brown, 10%);
+}
+.btn-cc:hover,
+.btn-cc:focus,
+.btn-cc.focus,
+.btn-cc:active,
+.btn-cc.active,
+.open > .dropdown-toggle.btn-primary {
+  color: $color-white;
+  background-color: lighten($color-brown, 10%);
+  border-color: darken($color-brown, 10%);
+}
+
+
+
+
+/* color */
+@for $i from 0 through $colorMaxGrade
+{
+	/* font-color */
+	.#{$prefix}color-black-#{$i+1}{
+		 color: lighten(darken($color-black, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}
+	.#{$prefix}color-brown-#{$i+1}{
+		 color: lighten(darken($color-brown, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}
+	.#{$prefix}color-red-#{$i+1}{
+		 color: lighten(darken($color-red, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}color-orangered-#{$i+1}{
+		 color: lighten(darken($color-orangered, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}color-yellow-#{$i+1}{
+		 color: lighten(darken($color-yellow, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}color-green-#{$i+1}{
+		 color: lighten(darken($color-green, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}color-blue-#{$i+1}{
+		 color: lighten(darken($color-blue, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}color-purple-#{$i+1}{
+		 color: lighten(darken($color-purple, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}color-gray-#{$i+1}{
+		 color: lighten(darken($color-gray, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}color-white-#{$i+1}{
+		 color: lighten(darken($color-white, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+
+	/* background-color */
+	.#{$prefix}bg-black-#{$i+1}{
+		 background-color: lighten(darken($color-black, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}
+	.#{$prefix}bg-brown-#{$i+1}{
+		 background-color: lighten(darken($color-brown, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}
+	.#{$prefix}bg-red-#{$i+1}{
+		 background-color: lighten(darken(red, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}bg-orangered-#{$i+1}{
+		 background-color: lighten(darken($color-orangered, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}bg-yellow-#{$i+1}{
+		 background-color: lighten(darken($color-yellow, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}bg-green-#{$i+1}{
+		 background-color: lighten(darken($color-green, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}bg-blue-#{$i+1}{
+		 background-color: lighten(darken($color-blue, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}bg-purple-#{$i+1}{
+		 background-color: lighten(darken($color-purple, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}bg-gray-#{$i+1}{
+		 background-color: lighten(darken($color-gray, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+	.#{$prefix}bg-white-#{$i+1}{
+		 background-color: lighten(darken($color-white, $colorMaxGrade/2 * 3% ), $i* 4% );
+	}	
+
+}
+
+
+/* box */
+.#{$prefix}box{
+	@include border-radius(10px);
+	@include box-shadow(#ff0000, 1px, 1px, 20px);
+	padding: 5px;
+	display: inline-block;
+}
+.#{$prefix}box-default{
+	color: $color-front-default;
+	background-color: $color-bg-default;
+	border: 2px solid $color-b-default;
+}
+
+.#{$prefix}box-primary{
+	color: $color-front-primary;
+	background-color: $color-bg-primary;
+	border: 2px solid $color-b-primary;
+}
+.#{$prefix}box-success{
+	color: $color-front-success;
+	background-color: $color-bg-success;
+	border: 2px solid $color-b-success;
+}
+.#{$prefix}box-danger{
+	color: $color-front-danger;
+	background-color: $color-bg-danger;
+	border: 2px solid $color-b-danger;
+}
+
+
+/* font */
+/* font-color */
+.#{$prefix}font-default{
+	color: $color-bg-default;
+}
+.#{$prefix}font-primary{
+	color: $color-bg-primary;
+}
+.#{$prefix}font-success{
+	color: $color-bg-success;
+}
+.#{$prefix}font-danger{
+	color: $color-bg-danger;
+}
+
+
+/* font-style */
+.#{$prefix}font-style-bold{
+	font-weight: bold;
+}
+.#{$prefix}font-style-italic{
+	font-style: italic;
+}
+
+/* font-size */
+@for $i from 1 through $font-size-count-max
+{
+	.#{$prefix}font-xs-#{$i}{
+		font-size: $font-size-base * $i;
+	}
+}
+
+@media (min-width: $size-sm){
+	@for $i from 1 through $font-size-count-max
+	{
+		.#{$prefix}font-sm-#{$i}{
+			font-size: $font-size-base * $i;
+		}
+	}
+}
+
+@media (min-width: $size-md){
+	@for $i from 1 through $font-size-count-max
+	{
+		.#{$prefix}font-md-#{$i}{
+			font-size: $font-size-base * $i;
+		}
+	}
+}
+
+@media (min-width: $size-lg){
+	@for $i from 1 through $font-size-count-max
+	{
+		.#{$prefix}font-lg-#{$i}{
+			font-size: $font-size-base * $i;
+		}
+	}
+}
+
+
+/* line-height */
+@for $i from 1 through $font-size-count-max
+{
+	.#{$prefix}font-line-xs-#{$i}{
+		line-height: $font-size-base * $i;
+	}
+}
+
+@media (min-width: $size-sm){
+	@for $i from 1 through $font-size-count-max
+	{
+		.#{$prefix}font-line-sm-#{$i}{
+			line-height: $font-size-base * $i;
+		}
+	}
+}
+
+@media (min-width: $size-md){
+	@for $i from 1 through $font-size-count-max
+	{
+		.#{$prefix}font-line-md-#{$i}{
+			line-height: $font-size-base * $i;
+		}
+	}
+}
+
+@media (min-width: $size-lg){
+	@for $i from 1 through $font-size-count-max
+	{
+		.#{$prefix}font-line-lg-#{$i}{
+			line-height: $font-size-base * $i;
+		}
+	}
+}
+
+
+
+// @mixin	ml-col(){
+// 		float: left;
+// }
+
+
+// *, *:before, *:after {
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
+
+// .row {
+//     // margin-right: -15px;
+//     // margin-left: -15px;
+//     &:before, &:after {
+//     	display: table;
+//     	content: " ";
+// 	}
+// 	&:after{
+// 		clear: both;	
+// 	}
+// }
+
+// @for $i from 1 through $gridMaxCount
+// {
+// 	.#{$prefix}col-xs-#{$i}{
+// 		float: left;
+// 		border:1px solid blue;
+// 		width: (100%/$gridMaxCount)*$i;
+// 	}
+// }
+
+// @media screen and (min-width: $size-sm){
+// 	@for $i from 1 through $gridMaxCount
+// 	{
+// 		.#{$prefix}col-sm-#{$i}{
+// 			float: left;
+// 			border:1px solid green;
+// 			width: (100%/$gridMaxCount)*$i;
+// 		}
+// 	}
+// }
+
+// @media screen and (min-width: $size-md){
+// 	@for $i from 1 through $gridMaxCount
+// 	{
+// 		.#{$prefix}col-md-#{$i}{
+// 			float: left;
+// 			width: (100%/$gridMaxCount)*$i;
+// 		}
+// 	}
+// }
+
+// @media screen and (min-width: $size-lg){
+// 	@for $i from 1 through $gridMaxCount
+// 	{
+// 		.#{$prefix}col-lg-#{$i}{
+// 			float: left;
+// 			width: (100%/$gridMaxCount)*$i;
+// 		}
+// 	}
+// }
